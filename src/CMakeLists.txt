@@ -14,7 +14,7 @@ project(freerct)
 find_package(Git)
 
 IF(WEBASSEMBLY)
-	message(STATUS "Configuring for WebAssembly (experimental)")
+	message(STATUS "Configuring for WebAssembly")
 	add_definitions("-DWEBASSEMBLY")
 
 	set(CMAKE_INSTALL_PREFIX "wasm")

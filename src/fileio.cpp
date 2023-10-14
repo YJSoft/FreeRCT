@@ -24,6 +24,10 @@
 #endif
 #include <sys/types.h>
 
+#ifdef WEBASSEMBLY
+#include <emscripten.h>
+#endif
+
 /**
  * Constructor.
  * @param fmt Error message (may use printf-style placeholders).
@@ -429,3 +433,58 @@ const std::string &TrackDesignDirectory()
 	}
 	return dir;
 }
+
+#ifdef WEBASSEMBLY
+/** Add user data files provided by the server to the correct directories. */
+void ScanForRemoteDataFiles()
+{
+	const int nr_files = emscripten_run_script_int("CountRemoteDataFiles();");
+	if (nr_files <= 0) return;
+
+	for (int i = 0; i < nr_files; ++i) {
+		std::string script = "GetRemoteDataFileName";
+		script += std::to_string(i);
+		script += "();";
+
+		std::string input_filename = emscripten_run_script_string(script.c_str());
+		if (input_filename.size() < 5) {
+			printf("WARNING: Filename #%d too short: '%s'", i, input_filename.c_str());
+			continue;
+		}
+		std::string filename = freerct_userdata_prefix();
+		filename += DIR_SEP;
+		if (input_filename.compare(input_filename.size() - 4, 4, ".fct") == 0) {
+			filename += SAVEGAME_DIRECTORY;
+		} else {
+			filename += TRACK_DESIGN_DIRECTORY;
+		}
+		filename += DIR_SEP;
+		filename += input_filename;
+
+		script = "GetRemoteDataFileContent";
+		script += std::to_string(i);
+		script += "();";
+
+		std::string encoded_content = emscripten_run_script_string(script.c_str());
+		size_t data_length = encoded_content.size();
+
+		try {
+			FILE *fp = fopen(filename.c_str(), "wb");
+			if (fp == nullptr) {
+				printf("WARNING: Could not create file '%s'", filename.c_str());
+				continue;
+			}
+
+			for (size_t j = 0; j < data_length; j += 2) {
+				int upper = encoded_content.at(j) - 'A';
+				int lower = encoded_content.at(j + 1) - 'a';
+				fputc((upper << 4) | lower, fp);
+			}
+
+			fclose(fp);
+		} catch (const std::exception &e) {
+			printf("WARNING: Failed loading remote data file #%d '%s'", i, filename.c_str());
+		}
+	}
+}
+#endif

@@ -57,7 +57,11 @@ private:
 /** Class for saving a savegame. */
 class Saver {
 public:
-	Saver(FILE *fp);
+	Saver(const char *filename, FILE *fp);
+
+#ifdef WEBASSEMBLY
+	~Saver();
+#endif
 
 	void StartPattern(const char *name);
 	void StartPattern(const char *name, uint32 version);
@@ -74,6 +78,10 @@ public:
 private:
 	FILE *fp; ///< Output file stream.
 	std::vector<std::string> pattern_names; ///< Stack of the current pattern names.
+
+#ifdef WEBASSEMBLY
+	std::string data_as_js_encoded_string;  ///< JavaScript encoded string representation of the saved binary data.
+#endif
 };
 
 /** Holds basic data about a savegame file. */

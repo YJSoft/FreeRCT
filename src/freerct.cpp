@@ -239,6 +239,10 @@ int freerct_main(int argc, char **argv)
 	/* Scan for savegames and config files in outdated locations. */
 	MigrateOldFiles();
 
+#ifdef WEBASSEMBLY
+	ScanForRemoteDataFiles();
+#endif
+
 	/* Load RCD files. */
 	InitImageStorage();
 	_rcd_collection.ScanDirectories();

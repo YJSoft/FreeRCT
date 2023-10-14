@@ -20,6 +20,11 @@
 #include "gamelevel.h"
 #include "gameobserver.h"
 #include "rev.h"
+#include <algorithm>
+
+#ifdef WEBASSEMBLY
+#include <emscripten.h>
+#endif
 
 /** Whether savegame files should automatically be resaved after loading. */
 bool _automatically_resave_files = false;
@@ -224,11 +229,38 @@ void Loader::VersionMismatch(uint saved_version, uint current_version)
 
 /**
  * Constructor for the saver.
+ * @param filename Name of the file we're writing to.
  * @param file Output file stream to write to.
  */
-Saver::Saver(FILE *file) : fp(file)
+Saver::Saver([[maybe_unused]] const char *filename, FILE *file) : fp(file)
 {
+#ifdef WEBASSEMBLY
+	this->data_as_js_encoded_string.reserve(1000 * 1000);  // Arbitrary estimate of a smallish savegame.
+	this->data_as_js_encoded_string = "GameFileSaved('";
+
+	for (; *filename != '\0'; ++filename) {
+		if (*filename <= 0x1f || *filename >= 0x7f) {
+			this->data_as_js_encoded_string += Format("\\u%04x", *filename);
+		} else if (*filename == '\'') {
+			this->data_as_js_encoded_string += "\\'";
+		} else if (*filename == '\\') {
+			this->data_as_js_encoded_string += "\\\\";
+		} else {
+			this->data_as_js_encoded_string.push_back(*filename);
+		}
+	}
+
+	this->data_as_js_encoded_string += "', '";
+#endif
 }
+
+#ifdef WEBASSEMBLY
+Saver::~Saver()
+{
+	this->data_as_js_encoded_string += "');";
+	emscripten_run_script(this->data_as_js_encoded_string.c_str());
+}
+#endif
 
 /** Checks that no patterns are currently open. */
 void Saver::CheckNoOpenPattern() const
@@ -278,6 +310,11 @@ void Saver::EndPattern()
 void Saver::PutByte(uint8 val)
 {
 	putc(val, this->fp);
+
+#ifdef WEBASSEMBLY
+	this->data_as_js_encoded_string += ('A' + (val >> 4));
+	this->data_as_js_encoded_string += ('a' + (val & 0xf));
+#endif
 }
 
 /**
@@ -521,13 +558,9 @@ bool SaveGameFile(const char *fname)
 	FILE *fp = fopen(fname, "wb");
 	if (fp == nullptr) return false;
 
-	Saver svr(fp);
+	Saver svr(fname, fp);
 	SaveElements(svr);
 	fclose(fp);
-
-#ifdef WEBASSEMBLY
-	printf("WEBASSEMBLY: Game saved to %s\n", fname);
-#endif
 
 	return true;
 }
