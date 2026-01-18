@@ -1,0 +1,235 @@
+# This file is part of FreeRCT.
+# FreeRCT is free software you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+# FreeRCT is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with FreeRCT. If not, see <http:#www.gnu.org/licenses/>.
+#
+
+strings:
+    meta:
+        nplurals: "2"
+        plural_0: "one"
+        plural_1: "other"
+        lang: "pt_BR"
+
+    gui:
+        LANGUAGE_NAME: "Português do Brasil"
+
+        NOT_AVAILABLE: Não disponível
+        MONTH_JANUARY: Janeiro
+        MONTH_FEBRUARY: Fevereiro
+        MONTH_APRIL: Abril
+        MONTH_MAY: Maio
+        MONTH_JUNE: Junho
+        MONTH_JULY: Julho
+        MONTH_AUGUST: Agosto
+        MONTH_OCTOBER: Outubro
+        MONTH_NOVEMBER: Novembro
+        MONTH_DECEMBER: Dezembro
+        OBJECTIVE_TIMEOUT_BEFORE: O objetivo precisa ser antingido antes de %1%.
+        OBJECTIVE_TIMEOUT_NONE: Esse objetivo pode ser atingido em qualquer momento.
+        OBJECTIVE_STRICT: Este objetivo precisa ser atingido a todo momento!
+        OBJECTIVETEXT_NONE: Divirta-se! Curta bastante!
+        OBJECTIVETEXT_GUESTS:
+            one: Ter, no mínimo, %1% visitantes no seu parque.
+            other: Ter pelo menos %1% visitantes no seu parque.
+        OBJECTIVETEXT_PARK_VALUE: Atingir valor do parque de pelo menos %1%.
+        GUEST_NAME: Visitante %1%
+        NR_DAYS:
+            one: '%1% dia'
+            other: '%1% dias'
+        APPLY: Aplicar
+        DECREASE_BUTTON: '-'
+        INCREASE_BUTTON: +
+        TOOLBAR_GUI_DROPDOWN_MAIN: Menu
+        MAIN_MENU_QUIT: Sair
+        MAIN_MENU_SETTINGS: Configurações
+        MAIN_MENU_LOAD: Abrir
+        MAIN_MENU_SAVE: Salvar
+        MAIN_MENU_NEW_GAME: Novo Jogo
+        MAIN_MENU_MENU: Menu Principal
+        TOOLBAR_GUI_DROPDOWN_SPEED: Velocidade
+        TOOLBAR_GUI_DROPDOWN_SPEED_PAUSE: Pausar
+        TOOLBAR_GUI_DROPDOWN_SPEED_1: 1x
+        TOOLBAR_GUI_DROPDOWN_SPEED_2: 2x
+        TOOLBAR_GUI_DROPDOWN_SPEED_8: 8x
+        TOOLBAR_GUI_DROPDOWN_VIEW: Visualizar
+        TOOLBAR_GUI_DROPDOWN_VIEW_MINIMAP: Minimapa
+        TOOLBAR_GUI_DROPDOWN_VIEW_GRID: Grade
+        TOOLBAR_GUI_DROPDOWN_VIEW_UNDERWATER: Visualização subaquática
+        TOOLBAR_GUI_DROPDOWN_VIEW_WIRE_RIDES: Brinquedos transparentes
+        TOOLBAR_GUI_DROPDOWN_VIEW_WIRE_SCENERY: Cenário transparente
+        TOOLBAR_GUI_DROPDOWN_VIEW_HIDE_PEOPLE: Ocultar pessoas
+        TOOLBAR_GUI_DROPDOWN_VIEW_HIDE_SUPPORTS: Ocultar suportes
+        TOOLBAR_GUI_DROPDOWN_VIEW_HIDE_FOUNDATIONS: Ocultar fundações verticais
+        TOOLBAR_GUI_DROPDOWN_VIEW_HEIGHT_PATHS: Mostrar alturas dos caminhos
+        TOOLBAR_GUI_DROPDOWN_VIEW_HEIGHT_TERRAIN: Mostrar alturas dos terrenos
+        TOOLBAR_GUI_DROPDOWN_VIEW_ZOOM_OUT: Diminuir zoom
+        TOOLBAR_GUI_DROPDOWN_VIEW_ZOOM_IN: Aumentar zoom
+        TOOLBAR_GUI_PATHS: Caminhos
+        TOOLBAR_GUI_TOOLTIP_BUILD_PATHS: Construir caminhos e filas
+        TOOLBAR_GUI_RIDE_SELECT: Comprar
+        TOOLBAR_GUI_TOOLTIP_RIDE_SELECT: Comprar novo brinquedo
+        TOOLBAR_GUI_TOOLTIP_SCENERY: Defina o cenário do parque
+        TOOLBAR_GUI_PATH_OBJECTS: Objetos para caminhos
+        TOOLBAR_GUI_TOOLTIP_PATH_OBJECTS: Construa caminhos para as pessoas andarem no parque
+        TOOLBAR_GUI_TOOLTIP_TERRAFORM: Alterar paisagem
+        TOOLBAR_GUI_FINANCES: Financeiro
+        TOOLBAR_GUI_TOOLTIP_FINANCES: Gerenciar finanças
+        TOOLBAR_GUI_STAFF: Empregados
+        TOOLBAR_GUI_TOOLTIP_STAFF: Contratar ou demitir empregados
+        TOOLBAR_GUI_INBOX: Caixa de Entrada
+        TOOLBAR_GUI_TOOLTIP_INBOX: Ver todas as mensagens
+        TOOLBAR_GUI_PARK: Gerenciamento do parque
+        BOTTOMBAR_GUESTCOUNT:
+            other: '%1% visitantes'
+            one: '%1% visitante'
+        NO_NAME: Desconhecido
+        DEFAULT_SCENARIO_NAME: Sem nome
+        DEFAULT_SCENARIO_DESCR: Este cenário não tem descrição.
+        QUIT_CAPTION: Tem certeza que deseja sair?
+        QUIT_MESSAGE: Tem certeza que deseja sair do FreeRCT?
+        RETURN_MESSAGE: Tem certeza que deseja voltar ao menu principal?
+        CONFIRM_NO: Não
+        CONFIRM_YES: Sim
+        ERROR_MESSAGE_SPRITE: Falha ao desenhar
+        ERROR_MESSAGE_HEADING_BUILD: Ops, você não pode colocar isso aqui…
+        ERROR_MESSAGE_HEADING_REMOVE: Ixi, isso não pode ser eliminado…
+        ERROR_MESSAGE_HEADING_COST: 'Custo estimado:'
+        ERROR_MESSAGE_HEADING_RETURN: 'Retorno esperado:'
+        ERROR_MESSAGE_UNREMOVABLE: Ixi, este objeto não pode ser removido.
+        ERROR_MESSAGE_EXPENSIVE: Você precisa de pelo menos %1%.
+        ERROR_MESSAGE_BAD_LOCATION: Localização não permitida.
+        ERROR_MESSAGE_UNDERGROUND: Você não pode construir por debaixo da terra.
+        ERROR_MESSAGE_OCCUPIED: Opa, algo está no caminho!
+        PERSON_STATUS_HEADING_TO_RIDE: Indo para %s
+        PERSON_STATUS_GOING_HOME: Voltando para casa
+        PERSON_STATUS_INSPECTING: Inspecionando %s
+        PERSON_STATUS_REPAIRING: Consertando %s
+        PERSON_STATUS_EMPTYING: Limpando as lixeiras
+        GUEST_INFO_MONEY: Dinheiro disponível
+        GUEST_INFO_MONEY_SPENT: Dinheiro gasto
+        GUEST_INFO_HAPPINESS: Nível de felicidade
+        GUEST_INFO_HUNGER: Fome
+        GUEST_INFO_THIRST: Sede
+        ITEM_NONE: Nada
+        ITEM_MAP: Mapa
+        ITEM_UMBRELLA: Guarda-Chuva
+        STAFF_MANAGEMENT_TITLE: Empregado
+        STAFF_SALARY: 'Salário diário: %1%'
+        STAFF_DISMISS: Demitir
+        STAFF_HIRE: Contratar
+        STAFF_NAME_HANDYMAN: Faxineiro %d
+        GUEST_INFO_WASTE: Lixo
+        STAFF_NAME_GUARD: Segurança %d
+        STAFF_CATEGORY_HANDYMEN: Faxineiros (%1%)
+        STAFF_CATEGORY_GUARDS: Seguranças (%1%)
+        STAFF_CATEGORY_ENTERTAINERS: Animadores (%1%)
+        STAFF_TITLE_NAME: Nome
+        STAFF_TITLE_STATUS: Estado
+        PATH_GUI_TITLE: Regiões
+        PATH_GUI_REMOVE: Remover
+        PATH_GUI_LONG_TIP: Construir um caminho longo
+        PATH_GUI_SLOPE_FLAT_TIP: Construir caminhos horizontalmente
+        PATH_GUI_FORWARD: Mandar para frente
+        PATH_GUI_BACKWARD: Mandar para trás
+        PATH_GUI_FORWARD_TIP: Mover acima de todos
+        PATH_GUI_BACKWARD_TIP: Mover abaixo de todos
+        PATH_GUI_NW_DIRECTION_TIP: Construir caminho na direção noroeste
+        PATH_GUI_NE_DIRECTION_TIP: Construir caminho na direção nordeste
+        PATH_GUI_SE_DIRECTION_TIP: Construir na direção sudeste
+        PATH_GUI_SW_DIRECTION_TIP: Construir na direção sudoeste
+        PATH_GUI_NORMAL_PATH: Caminhos normais
+        PATH_GUI_QUEUE_PATH: Filas
+        PATH_GUI_DIRECTIONAL: Direcional
+        PATH_GUI_SINGLE: Individual
+        PATH_GUI_SINGLE_TIP: Clique para colocar um caminho
+        PATH_GUI_DIRECTIONAL_TIP: Indique a direção para construir
+        RIDE_SELECT_TITLE: Selecionar brinquedo
+        RIDE_SELECT_SHOPS: Lojas
+        RIDE_SELECT_SHOPS_TOOLTIP: Clique para visualizar as lojas disponíveis
+        RIDE_SELECT_GENTLE: Brinquedos tranquilos
+        RIDE_SELECT_GENTLE_TOOLTIP: Clique para visualizar os brinquedos tranquilos
+        RIDE_SELECT_THRILL: Brinquedos radicais
+        RIDE_SELECT_THRILL_TOOLTIP: Clique para visualizar os brinquedos radicais
+        RIDE_SELECT_WET: Brinquedos aquáticos
+        RIDE_SELECT_WET_TOOLTIP: Clique para visualizar os brinquedos aquáticos
+        RIDE_SELECT_COASTER: Montanhas-Russas
+        RIDE_SELECT_COASTER_TOOLTIP: Clique para visualizar as Montanhas-Russas
+        RIDE_SELECT_RIDE: Selecionar
+        RIDE_SELECT_RIDE_TOOLTIP: Clique para selecionar o brinquedo
+        RIDE_SELECT_ROT_NEG_TOOLTIP: Clique para rotacionar o brinquedo no sentido horário
+        RIDE_SELECT_CUSTOM_DESIGN: Criar nova pista…
+        RIDE_MANAGER_RIDE_NAME_TEXT: 'Nome:'
+        RIDE_MANAGER_ENTRANCE_FEE_TEXT: 'Preço de entrada:'
+        RIDE_MANAGER_BROKEN_DOWN: Quebrado
+        RIDE_MANAGER_MAINTENANCE_TEXT: 'Intervalo entre manutenções (minutos):'
+        RIDE_MANAGER_MAINTENANCE_NEVER: Nunca
+        RIDE_MANAGER_NAUSEA: 'Nível de náusea:'
+        RIDE_MANAGER_INTENSITY: 'Nível de intensidade:'
+        RIDE_MANAGER_RATING_VERY_LOW: '%.2f (baixíssima)'
+        RIDE_MANAGER_RATING_LOW: '%.2f (baixa)'
+        RIDE_MANAGER_RATING_MEDIUM: '%.2f (média)'
+        RIDE_MANAGER_RATING_HIGH: '%.2f (alta)'
+        RIDE_MANAGER_RATING_VERY_HIGH: '%.2f (altíssima)'
+        RIDE_MANAGER_RATING_EXTREME: '%.2f (extrema)'
+        RIDE_MANAGER_RATING_NOT_YET_CALCULATED: Não calculado
+        SHOP_MANAGER_TITLE: Comprar "%1%"
+        SHOP_MANAGER_SELLING_PRICE_TEXT: Preço de venda
+        SHOP_MANAGER_ITEMS_SOLD_TEXT: Itens vendidos
+        SHOP_MANAGER_ITEM_PROFIT_TEXT: Lucro do item
+        SHOP_MANAGER_SELL_PROFIT_TEXT: Lucro das vendas
+        SHOP_MANAGER_TOTAL_PROFIT_TEXT: Lucro total
+        GENTLE_THRILL_RIDES_MANAGER_TITLE: '%1% "%2%"'
+        GENTLE_RIDES_MANAGER_TITLE: Brinquedos Tranquilos
+        THRILL_RIDES_MANAGER_TITLE: Brinquedos Radicais
+        GENTLE_THRILL_RIDES_MANAGER_MONTHLY_COST_TEXT: 'Custo mensal:'
+        GENTLE_THRILL_RIDES_MANAGER_CYCLES_TEXT: 'Número de ciclos:'
+        FENCE_TITLE: Construir cercas
+        FENCE_TYPE_WOOD: Cercas de madeira
+        FENCE_TYPE_BRICK: Parede de tijolos
+        SCENERY_TITLE: Cenário
+        SCENERY_ROTATE_NEG: Rodar o item no sentido horário
+        SCENERY_CATEGORY_TREES: Árvores
+        SCENERY_CATEGORY_FOUNTAINS: Fontes
+        PATH_OBJECTS_TITLE: Construir Caminhos
+        PATH_OBJECTS_BENCH: Bancos
+        PATH_OBJECTS_LAMP: Poste de luz
+        TERRAFORM_TITLE: Alterar paisagem
+        TERRAFORM_ADD_TEXT: +
+        TERRAFORM_SUB_TEXT: '-'
+        TERRAFORM_SUB_TOOLTIP: Miminuir o tamanho da área alterada
+        MONTH_SEPTEMBER: Setembro
+        TOOLBAR_GUI_SCENERY: Cenário
+        TOOLBAR_GUI_TERRAFORM: Paisagem
+        ERROR_MESSAGE_CAPTION: Mensagem
+        TITLEBAR_TIP: Clique na barra de título para maximizar a janela; segure o clique na barra de título e e arraste para mover a janela
+        TOOLBAR_GUI_DROPDOWN_SPEED_TOOLTIP: Alterar a velocidade do jogo
+        TOOLBAR_GUI_DROPDOWN_VIEW_HIDE_SURFACES: Ocultar superfícies horizontais
+        ERROR_MESSAGE_PAUSED: Ação não permitida enquanto o jogo está pausado.
+        STAFF_CATEGORY_MECHANICS: Mecânicos (%1%)
+        SCENERY_ROTATE_POS: Rodar o item no sentido anti-horário
+        TERRAFORM_ADD_TOOLTIP: Aumentar o tamanho da área alterada
+        MONTH_MARCH: Março
+        STAFF_NAME_ENTERTAINER: Animador %d
+        OBJECTIVE_TIMEOUT_EXACT: Esse objetivo precisa ser atingido em %1%.
+        TOOLBAR_GUI_DROPDOWN_SPEED_4: 4x
+        TOOLBAR_GUI_TOOLTIP_FENCE: Construir cercas no parque
+        ERROR_MESSAGE_UNOWNED_LAND: Humm, você não é o proprietário deste terreno!
+        PERSON_STATUS_SWEEPING: Limpando o chão
+        MAIN_MENU_LAUNCH_EDITOR: Editor
+        TOOLBAR_GUI_DROPDOWN_VIEW_HEIGHT_RIDES: Mostrar alturas dos brinquedos
+        OBJECTIVETEXT_PARK_RATING: Atingir avaliação de pelo menos %1%.
+        TOOLBAR_GUI_DROPDOWN_VIEW_UNDERGROUND: Visualização subterrânea
+        TOOLBAR_GUI_FENCE: Construir cerca
+        TOOLBAR_GUI_TOOLTIP_PARK: Gerencie os detalhes do parque
+        PERSON_STATUS_WANDER: Andando por aí
+        GUEST_INFO_NAUSEA: Náusea
+        STAFF_NAME_MECHANIC: Mecânico %d
+        PATH_GUI_BUY: Compras
+        PATH_GUI_BUY_TIP: Comprar caminho por piso
+        PATH_GUI_BULLDOZER_TIP: Clique para remover o último caminho criado e pegar seu dinheiro de volta (isso funcionará até você fechar esta janela)
+        PATH_OBJECTS_BIN: Lixeiras
+        RIDE_SELECT_ROT_POS_TOOLTIP: Clique para rotacionar o brinquedo no sentido anti-horário
+        SHOP_MANAGER_COST_PRICE_TEXT: Preço de Custo
+        RIDE_SELECT_NO_DESIGNS: Nenhuma pista salva
+        RIDE_MANAGER_EXCITEMENT: 'Avaliação do público:'
