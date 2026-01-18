@@ -2108,7 +2108,7 @@ void CoasterInstance::SaveDesign(const std::string &file, const std::string &des
 		FILE *fp = fopen(file.c_str(), "wb");
 		if (fp == nullptr) throw LoadingError("Could not open file for writing");
 
-		Saver svr(fp);
+		Saver svr(file.c_str(), fp);
 		design.Save(svr);
 
 		fclose(fp);

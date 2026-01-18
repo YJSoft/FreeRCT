@@ -53,7 +53,7 @@ USERDATA_PREFIX         XDG basedir spec or           Default directory where us
                         '~/.freerct' or               If not set, the XDG basedir specification will be applied.
                         '~/.local/share/freerct'      If ``XDG_DATA_HOME`` is not set, a platform-specific default path will be used.
 WEBASSEMBLY             OFF                           Compile as a WebAssembly program that can be run in the browser using
-                                                      JavaScript (experimental feature). May override all other settings.
+                                                      JavaScript. May override all other settings.
 ======================= ============================= ================================================================================================
 
 

@@ -93,4 +93,8 @@ std::string FindDataFile(const std::string &name);
 const std::string &SavegameDirectory();
 const std::string &TrackDesignDirectory();
 
+#ifdef WEBASSEMBLY
+void ScanForRemoteDataFiles();
+#endif
+
 #endif
