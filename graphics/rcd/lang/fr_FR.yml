@@ -529,7 +529,7 @@ strings:
         DESCRIPTION_RECOLOUR3: "-"
     ship-swing:
         NAME_INSTANCE1: "Supplicié de la cale"
-        NAME_INSTANCE2: "Pirates Ahoi !"
+        NAME_INSTANCE2: "Pirates Ahoi"
         NAME_TYPE: "Swing de bateau"
         DESCRIPTION_TYPE: "Un bateau qui pivote d'avant en arrière."
         DESCRIPTION_RECOLOUR1: "-"
