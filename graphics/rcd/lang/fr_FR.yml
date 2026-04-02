@@ -53,7 +53,7 @@ strings:
         TOOLBAR_GUI_TOOLTIP_BUILD_PATHS: "Construire les allées et files d'attente"
         TOOLBAR_GUI_RIDE_SELECT: "Acheter"
         TOOLBAR_GUI_TOOLTIP_RIDE_SELECT: "Achète une nouvelle attraction pour votre parc"
-        TOOLBAR_GUI_FENCE: "Contruire barrière"
+        TOOLBAR_GUI_FENCE: "Contruire une barrière"
         TOOLBAR_GUI_TOOLTIP_FENCE: "Construire une barrière dans votre parc"
         TOOLBAR_GUI_SCENERY: "Paysage"
         TOOLBAR_GUI_TOOLTIP_SCENERY: "Construire des objets de paysage dans votre parc"
@@ -73,10 +73,10 @@ strings:
             other: "%1% visiteurs"
 
         # Quit program strings.
-        QUIT_CAPTION: "Quitter?"
-        QUIT_MESSAGE: "Quitter FreeRCT?"
-        RETURN_CAPTION: "Retourner?"
-        RETURN_MESSAGE: "Retourner au menu principal?"
+        QUIT_CAPTION: "Quitter ?"
+        QUIT_MESSAGE: "Quitter FreeRCT ?"
+        RETURN_CAPTION: "Retourner ?"
+        RETURN_MESSAGE: "Retourner au menu principal ?"
 
         # Confirmation prompt strings.
         CONFIRM_NO: "Non"
@@ -87,10 +87,10 @@ strings:
         ERROR_MESSAGE_SPRITE: "Echec lors de l'affichage du sprite"
         ERROR_MESSAGE_HEADING_BUILD: "Cela ne peut pas être placé ici …"
         ERROR_MESSAGE_HEADING_REMOVE: "Cela ne peut pas être supprimé …"
-        ERROR_MESSAGE_HEADING_COST: "Coût prévu:"
-        ERROR_MESSAGE_HEADING_RETURN: "Retour prévu:"
+        ERROR_MESSAGE_HEADING_COST: "Coût prévu :"
+        ERROR_MESSAGE_HEADING_RETURN: "Retour prévu :"
         ERROR_MESSAGE_UNREMOVABLE: "Ce objet ne peut pas être supprimé …."
-        ERROR_MESSAGE_UNOWNED_LAND: "Vous n'êtes pas propriétaire du terrain!"
+        ERROR_MESSAGE_UNOWNED_LAND: "Vous n'êtes pas propriétaire du terrain !"
         ERROR_MESSAGE_EXPENSIVE: "Il vous faut au moins %1%."
         ERROR_MESSAGE_BAD_LOCATION: "Emplacement inadéquat."
         ERROR_MESSAGE_SLOPE: "Ne peut être construit sur une pente."
@@ -121,11 +121,11 @@ strings:
         ITEM_NONE: "Aucun"
         ITEM_MAP: "Carte"
         ITEM_UMBRELLA: "Parapluie"
-        ITEM_WRAPPER: "Wrapper"
+        ITEM_WRAPPER: "Enveloppe"
 
         # Staff window.
         STAFF_MANAGEMENT_TITLE: "Personnel"
-        STAFF_SALARY: "Salaire quotidien: %1%"
+        STAFF_SALARY: "Salaire quotidien : %1%"
         STAFF_DISMISS: "Renvoyer"
         STAFF_HIRE: "Embaucher"
         STAFF_NAME_MECHANIC: "Mécano %d"
@@ -186,7 +186,7 @@ strings:
 
         # Generic ride manager window strings.
         RIDE_MANAGER_ENTRANCE_FEE_TEXT: "Prix d'entrée :"
-        RIDE_MANAGER_RELIABILITY: "Fiabilité: %.1f%%"
+        RIDE_MANAGER_RELIABILITY: "Fiabilité : %.1f%%"
         RIDE_MANAGER_BROKEN_DOWN: "En panne"
         RIDE_MANAGER_MAINTENANCE_TEXT: "intervalle de maintenance (minutes) :"
         RIDE_MANAGER_MAINTENANCE_NEVER: "Jamais"
@@ -221,7 +221,7 @@ strings:
         GENTLE_THRILL_RIDES_MANAGER_CYCLES_TEXT: "Nombre de cycles :"
 
         # Fence gui strings.
-        FENCE_TITLE: "Contruire barrière"
+        FENCE_TITLE: "Construire une barrière"
         FENCE_TYPE_WOOD: "Barrière en bois"
         FENCE_TYPE_HEDGE: "Haie de conifères"
         FENCE_TYPE_BRICK: "Mur de briques"
@@ -295,7 +295,7 @@ strings:
         MESSAGE_COMPLAIN_VANDALISM: "Les visiteurs se plaignent des nombreux objets vandalisés dans le parc."
         MESSAGE_CHEAP_FEE: "Les visiteurs déclarent que le prix d'entrée est incroyablement faible."
         MESSAGE_AWARD_WON: "Le parc a gagné un prix : %1%"
-        MESSAGE_NEGATIVE_AWARD: "Le parc a gagné un prix négatif: %1%"
+        MESSAGE_NEGATIVE_AWARD: "Le parc a gagné un prix négatif : %1%"
 
         # Coaster construction strings.
         COASTER_BUILD_LEFT_BEND_TOOLTIP: "Selectionne une portion de rampe courbé vers la gauche"
@@ -529,7 +529,7 @@ strings:
         DESCRIPTION_RECOLOUR3: "-"
     ship-swing:
         NAME_INSTANCE1: "Supplicié de la cale"
-        NAME_INSTANCE2: "Pirates Ahoi"
+        NAME_INSTANCE2: "Ohé, les pirates"
         NAME_TYPE: "Swing de bateau"
         DESCRIPTION_TYPE: "Un bateau qui pivote d'avant en arrière."
         DESCRIPTION_RECOLOUR1: "-"
@@ -566,11 +566,32 @@ strings:
         DESCRIPTION_RECOLOUR1: Murs 1
         DESCRIPTION_RECOLOUR2: Murs 2
         NAME_INSTANCE2: Étourdissement
+        NAME_INSTANCE1: Tour & Tour
+        DESCRIPTION_TYPE: Un toboggan en forme de spirale construit autour d'une tour qui entoure la cage d'escalier.
+        DESCRIPTION_RECOLOUR3: Tobogan
+        NAME_TYPE: Toboggan en spirale
     top-spin:
         DESCRIPTION_RECOLOUR1: Gondole 1
         DESCRIPTION_RECOLOUR2: Gondole 2
         DESCRIPTION_RECOLOUR3: Contraintes
+        NAME_INSTANCE1: Fou d'amour
+        NAME_INSTANCE2: Exagéré
+        NAME_TYPE: Effet lifté
+        DESCRIPTION_TYPE: Une télécabine qui tourne sur son axe tout en se balançant d'avant en arrière.
     chair-swing:
         DESCRIPTION_RECOLOUR2: Toît
         DESCRIPTION_RECOLOUR3: Base
         DESCRIPTION_RECOLOUR1: Construction
+        NAME_INSTANCE1: Libéré
+        NAME_INSTANCE2: Balancement
+        NAME_TYPE: Fauteuil à bascule
+        DESCRIPTION_TYPE: Huit chaises suspendues à de longues chaînes fixées à un disque tournant.
+    mission-official-easy:
+        NAME: Facile officiel
+        DESCR: Un ensemble de scénarios simples proposés par l'équipe de développement de FreeRCT.
+    scenario-emerald-expanses:
+        NAME: Étendues émeraude
+        DESCR: Qui pourrait contempler ces vastes étendues verdoyantes sans être ému par leur beauté ? Au cœur de ces collines vallonnées et boisées, un parc d'attractions attend d'être aménagé.
+    scenario-rugged-ravine:
+        NAME: Gorge escarpée
+        DESCR: Ce parc d'attractions est situé dans un canyon creusé dans le paysage par une rivière asséchée depuis longtemps.
