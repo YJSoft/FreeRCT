@@ -194,6 +194,20 @@ strings:
         SETTING_RESOLUTION: "Change resolution"
         SETTING_RESOLUTION_TOOLTIP: "Change the screen resolution of the game"
 
+        NOT_AVAILABLE: n/a
+        DATE_FORMAT: '%2% %1%, Year %3%'
+        OBJECTIVE_TIMEOUT_BEFORE: This objective must be met before %1%.
+        OBJECTIVE_TIMEOUT_NONE: This objective can be met at any time.
+        OBJECTIVE_STRICT: This objective must be met at all times!
+        OBJECTIVETEXT_NONE: Have fun!
+        OBJECTIVETEXT_GUESTS:
+            one: Have at least %1% guest in your park.
+            other: Have at least %1% guests in your park.
+        OBJECTIVETEXT_PARK_RATING: Achieve a park rating of at least %1%.
+        OBJECTIVETEXT_PARK_VALUE: Achieve a park value of at least %1%.
+        GUEST_NAME: Guest %1%
+        NR_DAYS:
+            one: '%1% day'
     ice-cream-stall:
         NAME_INSTANCE1: "The Ice Palace"
         NAME_INSTANCE2: "Soda Shack"
